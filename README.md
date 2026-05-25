@@ -12,6 +12,17 @@ Full-stack demo of an enterprise ESG ingestion workflow for messy SAP, utility, 
 
 ## Local setup
 
+One-command start on Windows PowerShell:
+
+```powershell
+.\start-dev.ps1
+```
+
+This installs missing dependencies, runs migrations, seeds demo data, and starts both servers:
+
+- Backend: `http://127.0.0.1:8000/api`
+- Frontend: `http://127.0.0.1:5173`
+
 Backend:
 
 ```bash
