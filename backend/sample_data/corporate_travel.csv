@@ -1,0 +1,7 @@
+Travel Date,Traveler,Expense Type,origin_airport,destination_airport,Flight Class,distance_km,nights,city,cost_center
+2026-01-08,Ana Lopez,Flight,JFK,LHR,Business,,,
+2026/01/12,Ravi Menon,Hotel,,,,,3,London,CC-20
+14-Feb-2026,Ravi Menon,Taxi,,,,42,,London,CC-20
+2026-02-30,Sam Chen,Flight,SFO,SIN,Economy,27000,,,
+2026-03-03,Mia Shah,Train,,,,620,,Paris,CC-31
+2026-03-03,Mia Shah,Flight,BLR,DEL,Economy,,,

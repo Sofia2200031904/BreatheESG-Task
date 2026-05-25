@@ -1,0 +1,6 @@
+Billing Start,Billing End,Meter ID,Tariff,Usage,Unit,Account
+2026-01-18,2026-02-17,MTR-9001,Industrial TOU,82.5,MWh,UT-445
+02/18/2026,03/17/2026,MTR-9001,Industrial TOU,80300,kWh,UT-445
+2026-03-01,2026-03-31,MTR-9140,Green Rider,120,MWh,UT-446
+2026-04-01,2026-03-30,MTR-9140,Green Rider,20000,kWh,UT-446
+Apr 1 2026,Apr 30 2026,,Default Commercial,-200,kWh,UT-447
