@@ -43,16 +43,19 @@ class Command(BaseCommand):
                 },
             )
 
-        if options["load_samples"] and not acme.upload_batches.exists():
+        if options["load_samples"]:
             samples = {
                 SourceType.SAP_FUEL_PROCUREMENT: "sap_fuel_procurement.csv",
                 SourceType.UTILITY_ELECTRICITY: "utility_electricity.csv",
                 SourceType.CORPORATE_TRAVEL: "corporate_travel.csv",
             }
             sample_dir = Path(__file__).resolve().parents[3] / "sample_data"
-            for source_type, filename in samples.items():
-                data_source = DataSource.objects.get(company=acme, source_type=source_type)
-                with (sample_dir / filename).open("rb") as handle:
-                    ingest_csv_upload(acme, data_source, File(handle, name=filename), uploaded_by="demo.seed")
+            for company in (acme, northwind):
+                if company.upload_batches.exists():
+                    continue
+                for source_type, filename in samples.items():
+                    data_source = DataSource.objects.get(company=company, source_type=source_type)
+                    with (sample_dir / filename).open("rb") as handle:
+                        ingest_csv_upload(company, data_source, File(handle, name=filename), uploaded_by="demo.seed")
 
         self.stdout.write(self.style.SUCCESS("Demo tenant data is ready."))
