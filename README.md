@@ -69,3 +69,4 @@ They intentionally include bad dates, mixed units, negative values, missing fiel
 - Backend: deploy `backend/` to Render or Railway, set `DATABASE_URL`, `DJANGO_SECRET_KEY`, `DJANGO_ALLOWED_HOSTS`, and `CORS_ALLOWED_ORIGINS`.
 - Frontend: deploy `frontend/` to Vercel or Netlify, set `VITE_API_BASE_URL` to the deployed backend `/api` URL.
 - A live deployment and GitHub remote require account credentials, so this repository is prepared for them but not pushed or deployed from this local environment.
+"# BreatheESG-Task" 
